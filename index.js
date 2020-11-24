@@ -6,9 +6,6 @@ function getMaxDigit() {
     }
     return Math.max(...arrayResult);
 }
-getMaxDigit();
-
-
 
 function convertToCapitalize() {
   let userName = prompt(`Введіть своє ім'я`);
@@ -16,24 +13,18 @@ function convertToCapitalize() {
 
   return userName;
 }
-convertToCapitalize();
-
 
 function calculateTheTax() {
     const salaryValue = prompt(`Вкажіть суму заробітньої плати`);
     const tax = 0.195;
     return  parseFloat(salaryValue) - parseFloat(salaryValue) * tax;
 }
-calculateTheTax();
-
-
 
 function getRandomNumber () {
     const min = prompt(`Введіть початкове число`);
     const max = prompt(`Введіть кінцеве число`);
     return Math.floor(Math.random() * (Math.ceil(parseFloat(max)) -  Math.ceil(parseFloat(min)) + 1)) +  Math.ceil(parseFloat(min)) ;
 }
-getRandomNumber();
 
 function countLetter() {
     let inputWord = prompt(`Введіть будь-яке слово`);
@@ -42,8 +33,6 @@ function countLetter() {
     return countLetterA;
     
 }
-
-countLetter();
 
 function convertCurrency() {
     const userAmount = prompt(`Введіть суму для конвертування (зі знаком $ або UAH)`);
@@ -64,8 +53,6 @@ function convertCurrency() {
     }
     
 }
-convertCurrency();
-
 
 document.writeln(`Функція №1: ${getMaxDigit()} <br>`);
 document.writeln(`Функція №2: ${convertToCapitalize()} <br>`);
